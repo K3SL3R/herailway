@@ -46,4 +46,4 @@ echo "Port: ${PORT:-8080}"
 echo "Home: ${HERMES_HOME}"
 
 # Start Hermes in gateway mode
-exec hermes gateway --host 0.0.0.0 --port ${PORT:-8080}
+exec hermes gateway run
