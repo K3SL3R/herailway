@@ -44,8 +44,8 @@ ENV PYTHONUNBUFFERED=1
 # Expose port
 EXPOSE 8080
 
-# Volume for persistent data
-VOLUME /app/data
+# Persistent data is stored in /app/data
+# Attach a Railway Volume with mount path /app/data via the dashboard
 
 # Entrypoint script will restore backups on first run
 ENTRYPOINT ["/app/entrypoint.sh"]
